@@ -1,15 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import {BlogpostModule} from "./blogpost/blogpost.module";
-import {CmspageModule} from "./cmspage/cmspage.module";
+import { AppRoutingModule } from "./app-routing.module";
+import { BlogpostModule } from "./blogpost/blogpost.module";
+import { CmspageModule } from "./cmspage/cmspage.module";
+import { AuthModule } from "./auth/auth.module";
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { BannerComponent } from './banner/banner.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
+import { BannerComponent } from "./banner/banner.component";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 @NgModule({
   declarations: [
@@ -23,9 +24,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     BlogpostModule,
     CmspageModule,
+    AuthModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

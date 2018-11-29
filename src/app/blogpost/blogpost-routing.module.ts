@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 import { BlogpostListComponent } from "./blogpost-list/blogpost-list.component";
 import { BlogpostDetailComponent } from "./blogpost-detail/blogpost-detail.component";
 
@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class BlogpostRoutingModule { }
+export class BlogpostRoutingModule {}
